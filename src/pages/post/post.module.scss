@@ -1,0 +1,151 @@
+.container {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 0 2rem;
+
+  img {
+    margin-top: 1rem;
+    max-width: 1120px;
+  }
+}
+
+.post {
+  margin: 1rem auto;
+  max-width: 720px;
+
+  span {
+    display: inline-block;
+    font-style: italic;
+    font-size: 0.75rem;
+    margin: 0 22%;
+  }
+
+  h1 {
+    color: var(--Heading);
+    font-size: 2rem;
+    text-align: center;
+    font-weight: bold;
+  }
+}
+
+.info{
+  margin: 0.2rem auto;
+  height: 2.1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 2rem;
+
+  p, time {
+    font-size: 1rem;
+  }
+}
+
+.postContent{
+  margin-top: 2rem;
+  line-height: 2rem;
+  font-size: 1.125rem;
+
+  color: var(--Body);
+
+  h2 {
+    color: var(--Heading);
+  }
+
+  strong {
+    color: var(--Highlight);
+  }
+
+  p, ul {
+    margin: 1.5rem 0;
+  }
+
+  a {
+    color: var(--Link);
+    transition: filter 1.5s;
+    &:hover {
+      filter: brightness(0.8);
+      text-decoration: underline;
+    }
+  }
+
+  ul {
+    padding-left: 1.5rem;
+
+    li {
+      margin: 0.5rem 0;
+    }
+  }
+
+  pre {
+    padding-left: 1rem;
+    border-left: 3px solid var(--Highlight);
+    page-break-inside: avoid;
+    font-family: monospace;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1.6em;
+    max-width: 100%;
+    overflow: auto;
+    padding: 1em 1.5em;
+    display: block;
+    word-wrap: break-word;
+  }
+
+}
+
+.sugestions {
+  margin: 5rem auto;
+  max-width: 720px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid var(--Border);
+  padding-top: 2rem;
+
+  p {
+    font-size: 1.1rem;
+  }
+
+  a {
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--Highlight);
+  }
+
+  div + div {
+    text-align: right;
+  }
+}
+
+@media(max-width: 720px) {
+  .container {
+    max-width: 1120px;
+    margin: 0;
+    padding: 0 auto;
+
+    img {
+      margin: 1rem auto;
+      width: 330px;
+      height: 120px;
+    }
+    .post {
+      span {
+        display: inline-block;
+        font-style: italic;
+        font-size: 0.75rem;
+        margin: 0 auto;
+      }
+    }
+
+    .info {
+      height: 1.5rem;
+
+      time, p {
+        font-size: 0.95rem;
+      }
+    }
+  }
+
+}

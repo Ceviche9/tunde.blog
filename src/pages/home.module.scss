@@ -1,0 +1,73 @@
+.container {
+  max-width: 1120px;
+  margin: 3rem 25% 0;
+
+  button {
+    border: 0;
+    font-weight: bold;
+    background: transparent;
+    margin-top: 2rem;
+
+    p {
+      color: var(--Highlight);
+      transition: color 0.5s;
+
+    }
+
+    transition: filter 0.2s;
+
+    &:hover {
+      filter: brightness(0.7);
+    }
+  }
+
+}
+
+.posts {
+  max-width: 720px;
+
+  a {
+    display: block;
+
+    & + a {
+      margin-top: 2rem;
+    }
+
+    h1 {
+      color: var(--Heading);
+      display: flex;
+      font-size: 1.5rem;
+      margin-top: 1rem;
+      line-height: 2rem;
+      transition: color 0.5s;
+    }
+
+    p {
+      color: var(--Info);
+      margin-top: 0.5rem;
+      line-height: 1.625rem;
+    }
+
+    div {
+      display: flex;
+      align-items: flex-start;
+      flex-direction: row;
+      gap: 1rem;
+      color: var(--info);
+    }
+
+    &:hover h1 {
+      color: var(--Highlight)
+    }
+
+  }
+}
+
+
+@media(max-width: 720px) {
+  .container {
+    max-width: 720px;
+    margin: 3rem 5% 0;
+
+  }
+}
