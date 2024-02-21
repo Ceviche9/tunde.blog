@@ -87,7 +87,7 @@ export default function Post({
               <Clock /> {`${readTime} min`}
             </p>
           </div>
-          {lastPublicationDate ? <span>{lastPublicationDate}</span> : null}
+          {/* {lastPublicationDate ? <span>{lastPublicationDate}</span> : null} */}
           <div className={styles.postContent}>
             <p>{post.data.subtitle}</p>
             {post.data.content.map((postContent) => (
